@@ -5,6 +5,6 @@ import retrofit2.http.GET
 
 interface QuestionService {
     @GET("world.json")
-    fun questionAnswers():Question
+    suspend fun questionAnswers():Question
 
 }
